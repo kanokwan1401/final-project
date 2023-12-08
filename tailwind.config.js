@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'roboto':'Roboto, sans-serif',
+        'sansThai':'IBM Plex Sans Thai, sans-serif'
+
+      }
+    },
   },
   plugins: [],
 }
