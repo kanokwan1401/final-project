@@ -8,8 +8,10 @@ export default {
     extend: {
       fontFamily:{
         'roboto':'Roboto, sans-serif',
-        'sansThai':'IBM Plex Sans Thai, sans-serif'
-
+        'sansThai':'IBM Plex Sans Thai, sans-serif',
+        'museoModerno':'MuseoModerno, sans-serif',
+        'oswald':'Oswald, sans-serif',
+        'Silkscreen': 'Silkscreen, sans-serif'
       }
     },
   },
