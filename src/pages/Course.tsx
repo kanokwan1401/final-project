@@ -11,7 +11,7 @@ const Course = () => {
   const courseID = searchParams.get('course_id')
   const [courseData, setCourseData] = useState<CourseDataType | null>(null)
   const getCourseData = async () => {
-    await axios.get(`https://borntodev-final-project-api.borntodev.repl.co/courses/${courseID}`)
+    await axios.get(`https://81a580b1-633e-426f-8e80-90f6eabba9e8-00-ugdrq2fsa097.pike.replit.dev/courses/${courseID}`)
       .then((res) => {
         // console.log(res.data);
         setCourseData(res.data)

@@ -14,7 +14,7 @@ const Login = () => {
   const handleChangePassword = (e: any) => {
     setPassword(e.target.value)
   }
-  const onSubmit = (e: any) => {
+  const onSubmit = () => {
     localStorage.setItem('email',email)
     // const member = JSON.parse(localStorage.getItem('registerMember') || "")
     

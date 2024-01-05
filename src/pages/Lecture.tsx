@@ -11,7 +11,7 @@ const Lecture = () => {
   const [courseData, setCourseData] = useState<CourseDataType | null>(null)
   const [videoEnd, setVideoEnd] = useState<boolean>(localStorage.getItem(`watchEnd${courseID}`) === 'true')
   const getCourseData = async () => {
-    await axios.get(`https://borntodev-final-project-api.borntodev.repl.co/courses/${courseID}`)
+    await axios.get(`https://81a580b1-633e-426f-8e80-90f6eabba9e8-00-ugdrq2fsa097.pike.replit.dev/courses/${courseID}`)
       .then((res) => {
         // console.log(res.data);
         setCourseData(res.data)
@@ -81,7 +81,7 @@ const Lecture = () => {
           <div>
             <div className="w-[850px] h-[450px] bg-black mt-7 mobile:w-[330px] mobile:h-auto">
               <video ref={videoRef} controls>
-                <source src="clip.mp4" type="video/mp4" />
+                <source src="mock_clip.mp4" type="video/mp4" />
               </video>
             </div>
             <div className="mt-5 mobile:flex mobile:flex-col mobile:items-center ">

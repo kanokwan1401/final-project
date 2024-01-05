@@ -20,7 +20,7 @@ function Home() {
   const swiper = useSwiper()
 
   const getCourseData = async () => {
-    await axios.get(`https://borntodev-final-project-api.borntodev.repl.co/courses`)
+    await axios.get(`https://81a580b1-633e-426f-8e80-90f6eabba9e8-00-ugdrq2fsa097.pike.replit.dev/courses`)
       .then((res) => {
         // console.log(res.data);
         setCourseData(res.data)
